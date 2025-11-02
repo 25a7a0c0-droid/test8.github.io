@@ -1,0 +1,18 @@
+main:
+  - title: Home
+    url: /
+- title: Research
+    url: /research/
+ - title: Projects
+    url: /projects/
+- title: Team 
+  url: #
+    subitems: 
+      - title: PI
+        url: /team/pi/
+      - title: Members
+        url: /team/member/
+  - title: News
+    url: /news/
+-title: Contact
+  url: /contact/
