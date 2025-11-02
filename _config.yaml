@@ -1,7 +1,7 @@
 # site properties and page defaults
-title: 25a7a0c0-droid
+title: Test lab
 subtitle: 
-description: An engaging 1-3 sentence description of your lab.
+description: welcome to test lab
 header: images/background.jpg
 footer: images/background.jpg
 proofer: false
@@ -12,8 +12,6 @@ links:
   orcid: 0000-0001-8713-9213
   google-scholar: ETJoidYAAAAJ
   github: 25a7a0c0-droid
-  twitter: 25a7a0c0-droid
-  youtube: 25a7a0c0-droid
 
 ### jekyll settings
 
