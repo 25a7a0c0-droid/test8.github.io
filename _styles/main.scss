@@ -47,3 +47,25 @@ main {
 .dropdown:hover .dropdown-content {
   display: block; 
 }
+
+.member-profile {
+    /* 각 인물 정보를 구분하고 스타일링합니다. */
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.member-profile img {
+    /* 이미지 스타일 */
+    max-width: 100px;
+    height: auto;
+    border-radius: 50%; 
+    float: left; 
+    margin-right: 20px;
+}
+
+.member-profile h2, .member-profile h3 {
+    /* 제목 여백 조정 */
+    margin-top: 0;
+}
