@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: default
 title: "Research Members"
 permalink: /team/member/
 ---
@@ -9,9 +9,12 @@ permalink: /team/member/
 {% assign members = site.members | where_exp: "person", "person.role != 'pi'" %}
 
 {% for person in members %}
-<div class="member-card">
+<section>
     <h3>{{ person.name }} ({{ person.role }})</h3> 
+    <p>{{ person.affiliation }}</p>
     
-    {{ person.content | markdownify }} 
-</div>
+    <div class="bio">
+        {{ person.content | markdownify }} 
+    </div>
+</section>
 {% endfor %}
