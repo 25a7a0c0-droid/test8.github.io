@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: default 
 title: "PI (Professor)"
 permalink: /team/pi/
 ---
@@ -9,9 +9,17 @@ permalink: /team/pi/
 {% assign pis = site.members | where: "role", "pi" %}
 
 {% for person in pis %}
-<div class="profile-card">
+
+<section>
     <h2>{{ person.name }}</h2> 
-    <p>{{ person.title }}</p> 
-    {{ person.content | markdownify }} 
-</div>
+    <p>{{ person.affiliation }} | {{ person.role }}</p>
+    
+    {% if person.image %}
+        <img src="{{ person.image | relative_url }}" alt="{{ person.name }} photo">
+    {% endif %}
+
+    <div class="bio">
+        {{ person.content | markdownify }} 
+    </div>
+</section>
 {% endfor %}
