@@ -16,8 +16,8 @@ Click to see our prevent research.
 {%
   include button.html
   link="research"
-  text="See our publications"
   icon="fa-solid fa-arrow-left"
+  text="See our publications"
   flip=true
   style="bare"
 %}
