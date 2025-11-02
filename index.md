@@ -1,7 +1,11 @@
 ---
+title: Home
+nav:
+  order: 0
+  tooltip: Home
 ---
 
-# Testlab's website
+# {% include icon.html icon="fa-solid fa-microscope" %}Testlab's website
 
 Welcome to our Test lab. welcome welcome
 
