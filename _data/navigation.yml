@@ -1,7 +1,3 @@
-main:
-  - title: "Testlab's website"
-    url: "/Home/"
-
   - title: "Research"
     url: "/research/"
 
