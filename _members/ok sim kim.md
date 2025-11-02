@@ -1,8 +1,8 @@
 ---
 name: Ok sim Kim.
 image: images/photo.jpg
-description: Lead 
 role: postdoc
+group: member
 links:
   email: mini@email.com
 ---
