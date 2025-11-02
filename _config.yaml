@@ -1,7 +1,7 @@
 # site properties and page defaults
 title: Test lab
-subtitle: 
-description: welcome to test lab
+subtitle: test lab
+description: Welcome to our test lab welcome welcome
 header: images/background.jpg
 footer: images/background.jpg
 proofer: false
@@ -11,7 +11,7 @@ links:
   email: contact@25a7a0c0-droid.com
   orcid: 0000-0001-8713-9213
   google-scholar: ETJoidYAAAAJ
-  github: 25a7a0c0-droid
+  github: test lab
 
 ### jekyll settings
 
