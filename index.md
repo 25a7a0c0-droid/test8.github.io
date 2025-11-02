@@ -1,9 +1,9 @@
 ---
 ---
 
-# 25a7a0c0-droid's Website
+# Testlab's website
 
-An engaging 1-3 sentence description of your lab.
+Welcome to our Test lab. welcome welcome
 
 {% include section.html %}
 
@@ -11,7 +11,7 @@ An engaging 1-3 sentence description of your lab.
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Click to see our prevent research.
 
 {%
   include button.html
@@ -34,12 +34,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Click to see our recent news.
 
 {%
   include button.html
-  link="projects"
-  text="Browse our projects"
+  link="news"
+  text="Browse our news"
   icon="fa-solid fa-arrow-right"
   flip=true
   style="bare"
@@ -50,32 +50,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 {%
   include feature.html
   image="images/photo.jpg"
-  link="projects"
-  title="Our Projects"
+  link="news"
+  title="Recent news"
   flip=true
   style="bare"
   text=text
 %}
 
-{% capture text %}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-{%
-  include button.html
-  link="team"
-  text="Meet our team"
-  icon="fa-solid fa-arrow-right"
-  flip=true
-  style="bare"
-%}
-
-{% endcapture %}
-
-{%
-  include feature.html
-  image="images/photo.jpg"
-  link="team"
-  title="Our Team"
-  text=text
-%}
