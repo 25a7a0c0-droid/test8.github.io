@@ -40,20 +40,35 @@
 
   <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
 
-  <nav>
-    {% assign pages = site.pages
-      | where_exp: "page", "page.nav"
-      | sort: "nav.order"
-    %}
-    {% for page in pages %}
-      {% if page.nav %}
-        <a
-          href="{{ page.dir | relative_url | uri_escape }}"
-          data-tooltip="{{ page.nav.tooltip | xml_escape }}"
-        >
-          {{ page.title }}
-        </a>
+<nav>
+  <ul class="nav-list"> 
+    {% for item in site.data.navigation.main %} 
+    
+    <li class="nav-item {% if item.sublinks %}dropdown{% endif %}">
+      
+      <a 
+        href="{{ item.url | relative_url | uri_escape }}"
+        data-tooltip="{{ item.title | xml_escape }}"
+        class="{% if item.sublinks %}dropbtn{% endif %}"
+      >
+        {{ item.title }}
+      </a>
+
+      {% if item.sublinks %}
+        <div class="dropdown-content">
+          {% for sublink in item.sublinks %}
+            <a 
+              href="{{ sublink.url | relative_url | uri_escape }}"
+              data-tooltip="{{ sublink.title | xml_escape }}"
+            >
+              {{ sublink.title }}
+            </a>
+          {% endfor %}
+        </div>
       {% endif %}
+    </li>
+    
     {% endfor %}
-  </nav>
+  </ul>
+</nav>
 </header>
