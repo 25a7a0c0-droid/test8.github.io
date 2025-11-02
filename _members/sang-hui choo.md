@@ -1,7 +1,7 @@
 ---
 name: Sang Hui Choo
 image: images/photo.jpg
-role: principal-investigator
+role: pi
 affiliation: Yonsei University
 aliases:
   - S. H. Choo
